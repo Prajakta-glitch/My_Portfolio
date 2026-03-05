@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="intro">
+    <div id="ball"></div>
+    <div id="robot-container">
+      <svg viewBox="0 0 500 700" class="robot-svg">
+        <g id="robot">
+          <defs>
+            <linearGradient id="shell" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="50%" stop-color="#f2f2f2"/>
+              <stop offset="100%" stop-color="#d9d9d9"/>
+            </linearGradient>
+            <linearGradient id="visor" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#222"/>
+              <stop offset="100%" stop-color="#000"/>
+            </linearGradient>
+          </defs>
+
+          <ellipse cx="250" cy="180" rx="130" ry="110" fill="url(#shell)" stroke="#ccc" stroke-width="2"/>
+          <rect x="160" y="140" width="180" height="80" rx="40" fill="url(#visor)"/>
+          <g id="eye1"><circle class="pupil" cx="210" cy="180" r="10" fill="#00e5ff"/></g>
+          <g id="eye2"><circle class="pupil" cx="290" cy="180" r="10" fill="#00e5ff"/></g>
+          <rect x="225" y="280" width="50" height="50" rx="20" fill="#e6e6e6"/>
+          <ellipse cx="250" cy="370" rx="170" ry="90" fill="url(#shell)" stroke="#ccc" stroke-width="1.5"/>
+          <rect x="140" y="380" width="220" height="220" rx="60" fill="url(#shell)" stroke="#ccc" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="fake-cursor" id="cursor"></div>
+
+    <p id="loading-text">Loading</p>
+  </section>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="home-wrapper">
+      <div class="home-left">
+        <h1 class="name">Prajakta Guha</h1>
+        <h2 class="role">BCA Student | Developer</h2>
+        <p class="about">
+          I build interactive web pages with clean UI, modern animations and futuristic design thinking.
+        </p>
+        <button class="explore-btn" id="exploreBtn">Explore</button>
+      </div>
+      <div class="home-right">
+        <div class="image-card">
+          <img src="images/prajakta.jpeg" alt="Prajakta_pic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="terminal">
+    <div class="terminal-window">
+      <div id="terminal-text"></div>
+    </div>
+  </div>
+
+  <script src="theme.js" defer></script>
+</body>
+</html>
