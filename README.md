@@ -9,13 +9,13 @@ An interactive portfolio featuring a robot-themed intro, animated cursor trackin
 - Clean UI with animated navigation bar
 
 # 🛠️ Technology Used
-- HTML,
-- CSS,
+- HTML
+- CSS
 - JavaScript
 
 # 🎯 Future improvements
-- About section,
-- Projects showcase,
-- Contact page,
-- More robot UI interactions,
+- About section
+- Projects showcase
+- Contact page
+- More robot UI interactions
 - Mobile responsiveness
