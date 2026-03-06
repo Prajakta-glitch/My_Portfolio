@@ -1,5 +1,6 @@
 # 🤖 My_Portfolio
 An interactive portfolio featuring a robot-themed intro, animated cursor tracking and a terminal-style skills display.
+The website is built using basic front-end technologies and is meant for learning and experimenting with animations and layout.
 
 # 💫Features
 - Bouncing ball intro before portfolio loads
@@ -19,3 +20,6 @@ An interactive portfolio featuring a robot-themed intro, animated cursor trackin
 - Contact page
 - More robot UI interactions
 - Mobile responsiveness
+
+# 🤝 Acknowledgement
+Some technical assistance were provided by ChatGPT.
