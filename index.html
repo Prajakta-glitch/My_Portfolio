@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- INTRO OVERLAY -->
   <section id="intro">
     <div id="ball"></div>
     <div id="robot-container">
@@ -23,7 +26,6 @@
               <stop offset="100%" stop-color="#000"/>
             </linearGradient>
           </defs>
-
           <ellipse cx="250" cy="180" rx="130" ry="110" fill="url(#shell)" stroke="#ccc" stroke-width="2"/>
           <rect x="160" y="140" width="180" height="80" rx="40" fill="url(#visor)"/>
           <g id="eye1"><circle class="pupil" cx="210" cy="180" r="10" fill="#00e5ff"/></g>
@@ -35,10 +37,10 @@
       </svg>
     </div>
     <div class="fake-cursor" id="cursor"></div>
-
     <p id="loading-text">Loading</p>
   </section>
 
+  <!-- NAVBAR -->
   <header>
     <nav class="navbar">
       <ul class="nav-links">
@@ -50,15 +52,15 @@
     </nav>
   </header>
 
+  <!-- HOME -->
   <section id="home">
     <div class="home-wrapper">
       <div class="home-left">
         <h1 class="name">Prajakta Guha</h1>
         <h2 class="role">BCA Student | Developer</h2>
-        <p class="about">
+        <p class="about-para">
           I build interactive web pages with clean UI, modern animations and futuristic design thinking.
         </p>
-        <button class="explore-btn" id="exploreBtn">Explore</button>
       </div>
       <div class="home-right">
         <div class="image-card">
@@ -68,33 +70,99 @@
     </div>
   </section>
 
-  <div id="terminal">
-    <div class="terminal-window">
-      <div id="terminal-text"></div>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-wrapper">
+      <div class="about-left">
+        <div class="about-image-card">
+          <img src="images/prajakta.jpeg" alt="Prajakta">
+        </div>
+      </div>
+      <div class="about-right">
+        <h2 class="about-title">About <span>Me</span></h2>
+        <p class="about-bio">
+          I'm Prajakta Guha, a BCA student passionate about building
+          interactive web experiences with clean UI, modern animations,
+          and futuristic design thinking.
+        </p>
+        <div class="about-block">
+          <h3><i class="fa-solid fa-graduation-cap about-icon"></i>  Education</h3>
+          <p>Bachelor of Computer Applications (BCA) — Ongoing</p>
+        </div>
+        <div class="about-block">
+          <h3><i class="fa-solid fa-trophy about-icon"></i>  Achievements</h3>
+          <p>Built a fully animated portfolio with custom robot intro sequence.</p>
+          <p>Completed DSA course with C programming.</p>
+        </div>
+        <h3 class="skills-title"><i class="fa-solid fa-screwdriver-wrench about-icon"></i> Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">DSA with C</div>
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">Arduino</div>
+          <div class="skill-card">Problem Solving</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-label">
+    <h2 class="projects-title">My <span>Projects</span></h2>
+    <p class="projects-sub">Drag to explore the world</p>
+  </div>
+  <canvas id="three-canvas"></canvas>
+
+  <!-- Project popup card -->
+  <div class="project-popup" id="project-popup">
+    <div class="popup-inner">
+      <div class="popup-number" id="popup-number">01</div>
+      <h3 class="popup-title" id="popup-title">Project Title</h3>
+      <p class="popup-desc" id="popup-desc">Description here</p>
+      <div class="popup-stack" id="popup-stack"></div>
+      <a class="popup-link" id="popup-link" href="#">View Project →</a>
     </div>
   </div>
 
-    <section id="about">
+  <p class="drag-hint" id="drag-hint">⟵ Drag to explore ⟶</p>
+  </section>
 
-    <!-- Matrix Rain Canvas -->
-    <canvas id="matrixCanvas"></canvas>
+    <!-- CONTACT -->
+  <section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-card">
+      <h2 class="contact-title">Get In <span>Touch</span></h2>
+      <p class="contact-sub">Feel free to reach out for collaborations, questions or just a hello!</p>
 
-    <!-- Terminal -->
-    <div id="aboutTerminal">
-        <p class="aboutLine">> Initializing system...</p>
-        <p class="aboutLine">> Loading developer profile...</p>
-        <p class="aboutLine">> Name: Prajakta Guha</p>
-        <p class="aboutLine">> Course: BCA</p>
-        <p class="aboutLine">> Focus: Web Development</p>
-        <p class="aboutLine">> Location: India</p>
-        <p class="aboutLine">> Status: Ready to build creative web experiences</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope contact-icon"></i>
+          <a href="mailto:guhaprajakta319@email.com">guhaprajakta319@email.com</a>
+        </div>
+      </div>
 
-        <p class="aboutLine">
-            > System ready<span class="aboutCursor"></span>
-        </p>
+      <div class="contact-socials">
+        <a href="https://github.com/Prajakta-glitch" target="_blank" class="social-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/prajakta-guha-2b3942309" target="_blank" class="social-btn">LinkedIn</a>
+        <a href="https://www.instagram.com/_prajaktaguha_?igsh=dnVhOGY4ZWY2d2h3" target="_blank" class="social-btn">Instagram</a>
+      </div>
+
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" class="form-input"/>
+          <input type="email" placeholder="Your Email" class="form-input"/>
+        </div>
+        <textarea class="form-input form-textarea" placeholder="Your Message"></textarea>
+        <button class="form-btn">Send Message →</button>
+      </form>
+
     </div>
-
-</section>
+  </div>
+  </section>
 
   <script src="theme.js" defer></script>
 </body>
